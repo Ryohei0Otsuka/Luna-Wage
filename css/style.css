@@ -1,0 +1,98 @@
+body {
+    background: #fff0f5;
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    color: #555;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #d86fa5;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+form {
+    background: #fff;
+    border: 2px dashed #f5a9c4;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 420px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #8b3a62;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #f5c1d8;
+    border-radius: 8px;
+    background-color: #fff8fb;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+button {
+    background: #f080a0;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    width: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: #e06a91;
+}
+
+#add-block {
+    background-color: #f5a9c4;
+}
+
+.work-block {
+    background: #fff8fb;
+    border: 1px dashed #f3b4cc;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.remove-btn {
+    background: #ffc0cb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin-top: 10px;
+    font-size: 0.85em;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+#result {
+    margin-top: 30px;
+    background: #fff0f5;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #d86fa5;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #f3b4cc;
+}

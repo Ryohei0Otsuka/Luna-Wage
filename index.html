@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>在宅時給チェッカー</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>在宅時給チェッカー</h1>
+
+    <form id="wage-form">
+        <label>日付：<input type="date" name="date"></label>
+
+        <div id="work-blocks">
+            <div class="work-block">
+                <label>作業開始時間：<input type="time" name="start[]"></label>
+                <label>作業終了時間：<input type="time" name="end[]"></label>
+                <button type="button" class="remove-btn">削除</button>
+            </div>
+        </div>
+
+        <button type="button" id="add-block">＋ 作業時間を追加</button>
+
+        <label>時給（円）：<input type="number" name="wage" value="1200"></label>
+        <label>通信費など（円・任意）：<input type="number" name="transport" value="0"></label>
+
+        <button type="button" id="calc">計算する💡</button>
+    </form>
+
+    <div id="result"></div>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

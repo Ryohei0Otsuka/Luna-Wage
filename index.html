@@ -2,24 +2,23 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>在宅時給チェッカー</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-
     <h1>在宅時給チェッカー</h1>
 
     <form id="wage-form">
         <div id="work-blocks">
             <div class="work-block">
                 <label>作業開始時間：
-                    <input type="time" name="start[]" step="300">
+                    <input type="time" name="start[]" step="300" />
                 </label>
                 <label>作業終了時間：
-                    <input type="time" name="end[]" step="300">
+                    <input type="time" name="end[]" step="300" />
                 </label>
                 <button type="button" class="remove-btn">削除</button>
             </div>
@@ -28,17 +27,20 @@
         <button type="button" id="add-block">＋ 作業時間を追加</button>
 
         <label>時給（円）：
-            <input type="number" name="wage" value="1200">
+            <input type="number" name="wage" value="1200" />
         </label>
 
         <label>通信費など（円・任意）：
-            <input type="number" name="transport" value="0">
+            <input type="number" name="transport" value="0" />
         </label>
 
-        <label>
-            <input type="checkbox" name="late_bonus" id="late-bonus" checked>
-            22:00以降は時給1.25倍にする
-        </label>
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="late-bonus" name="late_bonus" checked />
+                <span class="slider"></span>
+            </label>
+            <label for="late-bonus" class="toggle-label">22:00以降は時給1.25倍にする</label>
+        </div>
 
         <button type="button" id="calc">計算する💡</button>
         <button type="button" id="reset">リセット🧹</button>
@@ -49,7 +51,6 @@
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/script.js"></script>
-
 </body>
 
 </html>

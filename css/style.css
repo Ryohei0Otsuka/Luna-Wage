@@ -1,47 +1,53 @@
 body {
-    background: #fff0f5;
+    background: #e6f7ff;
+    /* 淡い水色背景 */
     font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-    color: #555;
+    color: #23527c;
+    /* 濃い青系文字色 */
     margin: 0;
     padding: 20px;
 }
 
 h1 {
     text-align: center;
-    color: #d86fa5;
+    color: #1c75bc;
+    /* 濃い水色 */
     font-size: 2em;
     margin-bottom: 30px;
 }
 
 form {
-    background: #fff;
-    border: 2px dashed #f5a9c4;
+    background: #ffffff;
+    border: 2px dashed #a0d8ef;
+    /* 明るい水色の破線 */
     border-radius: 20px;
     padding: 20px;
     max-width: 420px;
     margin: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(28, 117, 188, 0.2);
+    /* 水色影 */
 }
 
 label {
     display: block;
     margin-bottom: 12px;
     font-weight: bold;
-    color: #8b3a62;
+    color: #1c75bc;
 }
 
 input {
     width: 100%;
     padding: 8px;
-    border: 1px solid #f5c1d8;
+    border: 1px solid #a0d8ef;
     border-radius: 8px;
-    background-color: #fff8fb;
+    background-color: #f0f9ff;
     box-sizing: border-box;
     margin-top: 5px;
+    color: #23527c;
 }
 
 button {
-    background: #f080a0;
+    background: #4aa3ff;
     color: white;
     border: none;
     border-radius: 12px;
@@ -51,29 +57,29 @@ button {
     font-weight: bold;
     cursor: pointer;
     margin-top: 15px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(74, 163, 255, 0.4);
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background: #e06a91;
+    background: #1c75bc;
 }
 
 #add-block {
-    background-color: #f5a9c4;
+    background-color: #a0d8ef;
 }
 
 .work-block {
-    background: #fff8fb;
-    border: 1px dashed #f3b4cc;
+    background: #f0f9ff;
+    border: 1px dashed #a0d8ef;
     padding: 12px;
     border-radius: 12px;
     margin-bottom: 15px;
 }
 
 .remove-btn {
-    background: #ffc0cb;
-    color: #fff;
+    background: #89c6ff;
+    color: white;
     border: none;
     border-radius: 6px;
     padding: 6px 12px;
@@ -86,21 +92,21 @@ button:hover {
 }
 
 .remove-btn:hover {
-    background: #ff8aa1;
+    background: #1c75bc;
 }
 
 #result {
     margin-top: 30px;
-    background: #fff0f5;
+    background: #e6f7ff;
     padding: 15px;
     border-radius: 15px;
     text-align: center;
     font-size: 1.1em;
-    color: #d86fa5;
+    color: #1c75bc;
     max-width: 420px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid #f3b4cc;
+    border: 1px solid #a0d8ef;
 }
 
 /* トグルスイッチ用 */
@@ -134,7 +140,7 @@ button:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #cce9ff;
     border-radius: 34px;
     transition: 0.4s;
 }
@@ -152,7 +158,7 @@ button:hover {
 }
 
 .switch input:checked+.slider {
-    background-color: #f080a0;
+    background-color: #4aa3ff;
 }
 
 .switch input:checked+.slider:before {
@@ -161,7 +167,7 @@ button:hover {
 
 .toggle-label {
     font-weight: bold;
-    color: #d86fa5;
+    color: #1c75bc;
     user-select: none;
     cursor: pointer;
     font-size: 1em;
